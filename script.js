@@ -8,7 +8,7 @@ const crearCanción = (informacioncancion) => {
             <p class="songlist__song__text__artist">${informacioncancion.author}</p>
         </div>
     `
-    
+
     div.addEventListener('click', () => {
         document.getElementById('song-front').setAttribute('src', "https://api.institutoalfa.org/api/songs/image/" + informacioncancion.image.filename)
 
@@ -21,14 +21,15 @@ const crearCanción = (informacioncancion) => {
 
     })
 
-    
+
     return div
 }
 
 document.getElementById('play').addEventListener('click', () => {
     const audio = document.getElementById('song-audio')
-    if (audio.pause) {
-        audio.onplay()} else {audio.pause}
+    if (audio.paused) {
+        audio.play()
+    } else { audio.pause() }
 })
 
 axios.get('https://api.institutoalfa.org/api/songs').then((res) => {
