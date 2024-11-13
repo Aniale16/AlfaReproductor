@@ -16,7 +16,6 @@
 
 .main{
     display: flex;
-    flex-direction: row;
     background-color: #001317;
 }
 
@@ -57,7 +56,7 @@
 /* ----- Song list ------ */
 
 .songlist{
-    padding-right: 200px;
+    padding-right: 10px;
     padding-left: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -69,7 +68,7 @@
 .songlist__song{
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 50px;
 }
 
 .songlist__song__text{
@@ -86,17 +85,24 @@
     font-weight: 550;
 }
 
+
 .songlist__song__text__artist{
     color: white;
     font-weight: 250;
     opacity: 0.7;
 }
 
+.songlist__song__cover{
+    width: 100x;
+    height: 100px;
+    
+}
+
 /* -------- Song -------- */
 
 .playingbackground{
     background-image: url(assets1/pexels-jplenio-1119976.jpg);
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     padding-left: 350px;
     padding-right: 350px;
@@ -113,7 +119,7 @@
     align-items: center;
     padding: 25px;
     opacity: 1;
-}
+} 
 
 .playingsong__content__cover{
     padding-bottom: 25px;

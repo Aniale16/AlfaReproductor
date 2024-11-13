@@ -7,7 +7,10 @@
     <meta name="keywords" content="Music, free Music, Music player, free music player, online music, online music player">
     <meta name="description" content="King of music, the one true player | Zeus Online Music Player">
     
-    <link rel="shortcut icon" href="assets1/Vector.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets1/iso.svg" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     
     <title>Zeus | Divine Music</title>
     
@@ -23,7 +26,7 @@
     
     <header class="header">
         <nav class="header__navbar">
-            <img src="assets1/Iso.png" alt="" class="header__navbar__logo">
+            <img src="assets1/Iso1.png" alt="" class="header__navbar__logo">
             
             <div class="header__navbar__search">
                 <a href="#"><img src="assets1/search.svg" alt=""></a>
@@ -36,27 +39,24 @@
 
    <div class="main">
 
-       <section class="songlist">
+       <section class="songlist" id="container">
            <div class="songlist__song">
-               <img src="/assets1/covermini.png" alt="" class="songlist__song__cover">
-               <div class="songlist__song__text">
-                   <h1 class="songlist__song__text__title">DIE FOR YOU</h1>
-                   <p class="songlist__song__text__artist">Starset</p>
-               </div>
+               
            </div>
        </section>
    
        <section class="playingbackground">
            <div class="playingsong">
                <div class="playingsong__content">
-                   <img src="/assets1/cover.png" alt="" class="playingsong__content__cover">
-                   <h2 class="playingsong__content__title">DIE FOR YOU</h2>
-                   <p class="playingsong__content__artist">Starset</p>
-               </div>
+                   <img src="" alt="" class="playingsong__content__cover" id="song-front">
+                   <h2 class="playingsong__content__title" id="song-title"></h2>
+                   <p class="playingsong__content__artist" id="song-author"></p>
+                    <audio src="" id="song-audio" autoplay></audio>
+                </div>
                <div class="controls">
                    <img src="/assets1/Like.svg" alt="" class="controls__like">
                    <img src="/assets1/Backward.svg" alt="" class="controls__Backwards">
-                   <img src="/assets1/Pause.svg" alt="" class="controls__pause">
+                   <img src="/assets1/Pause.svg" alt="" class="controls__pause" id="play">
                    <img src="/assets1/foward.svg" alt="" class="controls__forward">
                    <img src="/assets1/List.svg" alt="" class="controls__list">
                </div>
